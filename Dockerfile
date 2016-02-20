@@ -28,3 +28,7 @@ RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSI
 	&& gpg --verify mongo.tgz.sig \
 	&& tar -xvf mongo.tgz -C /usr/local --strip-components=1 \
 	&& rm mongo.tgz*
+
+#docker login
+#docker build -t scaamanho/mongo26 .
+#docker push scaamanho/mongo26
